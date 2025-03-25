@@ -4,6 +4,8 @@
 
 package com.mycompany.jdraw;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author anton
@@ -11,7 +13,11 @@ package com.mycompany.jdraw;
 public class JDraw {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        JFPaint form = new JFPaint();
+        form.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        form.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        form.setLocationRelativeTo(form);
+        form.setVisible(true);
         
     }
 }
